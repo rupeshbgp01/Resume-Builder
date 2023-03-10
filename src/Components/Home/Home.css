@@ -1,0 +1,23 @@
+.home__container{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: url(../images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home__heading{
+    width: 100%;
+}
+.home__container>h1{
+    color: blue;
+    width: 100%;
+}
+.front__image>img{
+    width: 20%;
+}

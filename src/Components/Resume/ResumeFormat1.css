@@ -1,0 +1,63 @@
+.format1__container{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: white;
+   
+}
+hr{
+    margin-top: 10px;
+    color: black;
+}
+.intro__container{
+    padding-bottom: 1rem;
+    width: 100%;
+    /* background-color: rgb(93, 55, 199);
+    color: white; */
+}
+.contact__container{
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+}
+
+
+.detail__container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.left__intro{
+    width: 40%;
+}
+.right__intro{
+    width: 60%;
+}
+.sub__detail{
+    padding-bottom: 0.5rem;
+}
+.edu__detail{
+    padding-bottom: 1rem;
+}
+.experiance__info{
+    padding-bottom: 1rem;
+}
+.experiance__info>p>span{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.position__info{
+    font-style: italic;
+}
+
+.project__info{
+    padding-bottom: 1rem;
+}
+.achievement__list{
+    padding-bottom: 1rem;
+}
+.achiv__info{
+    display: flex;
+    justify-content: space-between;
+}
