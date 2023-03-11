@@ -17,19 +17,20 @@ import Button from "./Components/Buttons/Button";
 function App() {
   return (
     <div className="main__container">
-     
+
       <div className="resumeBuilder__container">
         <Header />
-        <Title title="Resume Builder"/>
+        <Title title="Resume Builder" />
         {/* <Colors/> */}
         <div className="format__button">
-          <Button title="Choose Resume Format"/>
-          <Button title="Download"/>
+          <Button title="Choose Resume Format" />
+          <Button title="Download" />
         </div>
         <div className='resume__form__container'>
           <Navbar />
           <Routes>
             <Route exact path="/" element={<BaicInfo />}></Route>
+            <Route exact path="*" element={<BaicInfo />}></Route>
             <Route exact path="/work" element={<WorkExperience />}></Route>
             <Route exact path="/summary" element={<Summary />}></Route>
             <Route exact path="/other" element={<Others />}></Route>
@@ -37,12 +38,12 @@ function App() {
           </Routes>
           {/* <Preview /> */}
         </div>
-        <Title title="Your Resume"/>
-        <ResumeFormat1/>
+        <Title title="Your Resume" />
+        <ResumeFormat1 />
         <div className="down__btn">
-        <Button title="Download Your Resume" />
+          <Button title="Download Your Resume" />
         </div>
-        
+
       </div>
     </div>
   );
