@@ -1,4 +1,3 @@
-
 import "./Forms.css";
 import Button from "../Buttons/Button";
 
@@ -6,8 +5,8 @@ function BasicInfo() {
     return (
         <div className="basic__container">
             <div className="basic__top">
-                <label htmlFor="basic__title"  name="basic__title"><span>Basic Info</span></label>
-                <input type="text"  id="basic__title" placeholder="Title : Basic Information"></input>
+                <label htmlFor="basic__title" name="basic__title"><span>Basic Info</span></label>
+                <input type="text" id="basic__title" placeholder="Title : Basic Information"></input>
             </div>
             <div className="basic__middle">
                 <div className="middle__left">
@@ -19,7 +18,7 @@ function BasicInfo() {
                     <input type="text" placeholder="Valid Email Id"></input>
                 </div>
                 <div className="middle__right">
-                <label htmlFor="your__title"><p>Title </p></label>
+                    <label htmlFor="your__title"><p>Title </p></label>
                     <input type="text" placeholder="Your title"></input>
                     <label htmlFor="github"><p>Github </p></label>
                     <input type="text" placeholder="Github link"></input>
@@ -28,9 +27,9 @@ function BasicInfo() {
                 </div>
             </div>
             <div className="basic__bottom">
-                <Button title="Prev"/>
+                <Button title="Prev" />
                 <Button title="Save" />
-                <Button title="Next"/>
+                <Button title="Next" />
             </div>
         </div>
     );
