@@ -1,11 +1,24 @@
 .format1__container{
-    width: 70%;
+    width: 100%;
     margin: auto;
     padding: 20px;
-    border: 2px solid black;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
     background-color: white;
-   
+    font-family: sans-serif;
+    /* background-color: rgb(213, 235, 228);
+    background-color: rgb(250, 245, 237); */
 }
+h2,h3,h3{
+    color: var(--blue);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 hr{
     margin-top: 10px;
     color: black;
@@ -13,8 +26,6 @@ hr{
 .intro__container{
     padding-bottom: 1rem;
     width: 100%;
-    /* background-color: rgb(93, 55, 199);
-    color: white; */
 }
 .contact__container{
     display: flex;
@@ -49,6 +60,7 @@ hr{
 }
 .position__info{
     font-style: italic;
+    font-family: cursive;
 }
 
 .project__info{
@@ -60,4 +72,11 @@ hr{
 .achiv__info{
     display: flex;
     justify-content: space-between;
+}
+
+.detail>p,.experiance__info>p,.project__info>span{
+    font-weight: 600;
+}
+.detail>p>span,.experiance__info>span{
+  font-weight: 500;
 }

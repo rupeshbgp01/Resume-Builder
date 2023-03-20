@@ -1,24 +1,38 @@
 import "./Forms.css";
-import Button from "../Buttons/Button";
+import React from "react";
 
-function Achievement(){
+function Achievement({ formData, setFormData }) {
+
+    let name, value;
+    function handleChange(event) {
+        name = event.target.name;
+        value = event.target.value;
+        setFormData({ ...formData, [name]: value });
+    }
+
     return (
-        <div  className="basic__container">
-            <div className="basic__top">
-                <label htmlFor="basic__title"  name="basic__title"><span> Achievement Title</span></label>
-                <input type="text"  id="basic__title" placeholder="Achievement"></input>
-            </div>
-            <div className="middle__left">
-                <h4>List of Achievements</h4>
-                <input type="text" placeholder="Level 1"></input>
-                <input type="text" placeholder="Level 2"></input>
-                <input type="text" placeholder="Level 3"></input>
-                <input type="text" placeholder="Level 4"></input>
-            </div>
-            <div className="basic__bottom">
-                <Button title="Prev"/>
-                <Button title="Save" />
-                <Button title="Next"/>
+        <div className="wrapper" >
+            <div className="basic__container">
+                <div className="basic__top">
+                    <label htmlFor="basic__title" name="basic__title"><span> Achievements</span></label><br></br><br></br>
+                    <input type="text" id="basic__title" placeholder="Section title : Achievements"></input>
+                </div>
+
+                <div className="form__container">
+
+                    <label htmlFor="achievement_name"> </label>
+                    <input type="text" name="achievement_name" onChange={handleChange} value={formData.achievement_name} placeholder="Achievement Name"></input>
+
+
+                    <label htmlFor="achievement_certificate"></label>
+                    <input type="text" name="achievement_certificate" onChange={handleChange} value={formData.achievement_certificate} placeholder="Achievement certificate drive or other link"></input>
+
+                    <input type="text" name="achievement_descriptione" onChange={handleChange} value={formData.achievement_description} placeholder="Achievement description"></input>
+
+                </div>
+
+
+
             </div>
         </div>
     );

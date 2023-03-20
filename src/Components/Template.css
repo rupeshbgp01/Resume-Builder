@@ -1,0 +1,10 @@
+.template__container{
+    background-color: var(--blue);
+}
+.template{
+    margin: 1rem;
+    width: 7rem;
+    height: 10rem;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px white;
+}
