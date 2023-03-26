@@ -11,3 +11,6 @@
   --color-white:#ffffff;
   --color-copper:#b9732f;
 }
+html{
+  scroll-behavior: smooth;
+}

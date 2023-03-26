@@ -16,10 +16,10 @@ function Navbar() {
                 <li><NavLink to="/project" activeclassname="active">Projects</NavLink></li>
                 <li><NavLink to="/achievement" activeclassname="active">Achievement</NavLink></li>
                 <li><NavLink to="/summary" activeclassname="active">Other</NavLink></li>
-                <div className="next_prev_btn_section">
+                {/* <div className="next_prev_btn_section">
                     <Button title="&#8249; Prev" />
                     <Button title="Next &#8250;" />
-                </div>
+                </div> */}
             </ul>
 
 

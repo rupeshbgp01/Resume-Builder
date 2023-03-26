@@ -1,5 +1,17 @@
 .template__container{
-    background-color: var(--blue);
+    
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.templates{
+    display: flex;
+    overflow: scroll;
+    /* padding: 1rem; */
+    z-index: 3;
 }
 .template{
     margin: 1rem;
@@ -7,4 +19,13 @@
     height: 10rem;
     border: 1px solid white;
     box-shadow: 1px 1px 10px white;
+    z-index: 1;
+}
+.template:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px white;
+}
+.active_template>template{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px white;
 }

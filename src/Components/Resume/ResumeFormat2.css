@@ -1,0 +1,47 @@
+.format2__container{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: sans-serif;
+    
+}
+
+h1,h2,h3,h3{
+    color: var(--blue);
+}
+
+.top__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.basic__intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.basic__intro>h1{
+    opacity: 0.7;
+    color: gray;
+}
+
+.basic__contact__container{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 15px;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    
+}
+

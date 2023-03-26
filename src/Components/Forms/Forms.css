@@ -1,7 +1,8 @@
 .wrapper{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 80%;
+    overflow: hidden;
 }
 .basic__container{
     overflow-y: auto;
@@ -92,6 +93,19 @@ label>span{
 
 @media screen and (max-width: 1024px){
     .basic__container{
-        height: 50%;
+        height: 100%;
     }
+    .wrapper{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px){
+    .basic__container{
+        height: 100%;
+        
+    }
+    .wrapper{
+        width: 100%;
+    }
+    
 }

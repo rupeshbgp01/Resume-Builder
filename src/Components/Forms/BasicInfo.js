@@ -1,4 +1,6 @@
+
 import React from "react";
+
 import "./Forms.css";
 
 
@@ -11,9 +13,10 @@ function BasicInfo({ formData, setFormData }) {
         value = event.target.value;
         setFormData({ ...formData, [name]: value });
     }
-    
+
 
     return (
+
         <div className="wrapper" >
             <div className="basic__container">
                 <div className="basic__top">
@@ -41,18 +44,15 @@ function BasicInfo({ formData, setFormData }) {
                         <label htmlFor="github"><p> </p></label>
                         <input type="text" name="github" onChange={handleChange} value={formData.github} placeholder="Github link"></input>
 
-                        
+
 
                     </div>
                 </div>
-               
             </div>
-          
         </div>
 
     );
 }
-
- export default BasicInfo;
+export default BasicInfo;
 
 
