@@ -16,9 +16,10 @@
     font-size: 1.2rem;
     font-weight: 600;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-top: 2rem;
-    
+    /* margin-top: 2rem; */
+    height: 90vh;
 }
 .nav__list>li{
     border: 3px solid transparent;
@@ -54,4 +55,15 @@
     transition-delay: 200ms;
     transition-duration: 100ms;
     transition-timing-function: ease-out;
+}
+@media screen and  (max-width:600px) {
+    .nav__container{
+        font-size: 0.5rem;
+        
+        
+    }
+    .nav__list{
+        font-size: 0.5rem;
+        justify-content: start;
+    }
 }

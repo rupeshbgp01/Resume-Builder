@@ -4,7 +4,7 @@
     padding: 20px;
     overflow-y: scroll;
     height: 100vh;
-    overflow-x: hidden;
+    
     background-color: white;
     font-family: sans-serif;
      /* background-color: rgb(213, 235, 228);
@@ -27,10 +27,14 @@ hr{
     padding-bottom: 1rem;
     width: 100%;
 }
+.intro__container>h2{
+    font-size: 2.4rem;
+}
 .contact__container{
     display: flex;
     justify-content: space-between;
     right: 0;
+    padding-top: 1rem;
 }
 
 
@@ -74,8 +78,9 @@ hr{
     justify-content: space-between;
 }
 
-.detail>p,.experiance__info>p,.project__info>span{
+.detail>p,.project__info>span{
     font-weight: 600;
+    /* opacity: 0.5; */
 }
 .detail>p>span,.experiance__info>span{
   font-weight: 500;

@@ -1,12 +1,14 @@
 .home__container{
     background-color:  black;
-    height: 100vh;
-    overflow: auto;
+    /* height: 100vh; */
+   
+    /* overflow: hidden; */
+    overflow: scroll;
 }
 
 .nav_form_container{
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content:space-between ;
 }
 
@@ -15,7 +17,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100vh;
+    /* height: 100vh; */
+    width: 100%;
     
 }
 
@@ -84,6 +87,9 @@
     .slider_nav{
         position: relative;
     }
+    /* .home__container{
+        overflow: visible;
+    } */
 }
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import resumeSvg from "./images/resume2.svg";
+import resumeSvg from "./images/resume1.svg";
 
 import './LandingPage.css';
 // import { Link } from 'react-router-dom'

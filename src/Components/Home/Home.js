@@ -3,7 +3,7 @@ import { AiOutlineDownload } from 'react-icons/ai'
 import React, { useState, useRef } from "react";
 import ReactToPrint from "react-to-print";
 import { Route, Routes } from "react-router-dom"
-// import { Link } from 'react-router-dom'
+
 import Navbar from "../Navbar";
 import BasicInfo from "../Forms/BasicInfo";
 import WorkExperience from "../Forms/WorkExperience";
@@ -11,7 +11,7 @@ import Other from "../Forms/Others";
 import Achievement from "../Forms/Achievement";
 import ResumeFormat1 from "../Resume/ResumeFormat1";
 import ResumeFormat2 from "../Resume/ResumeFormat2";
-// import Button from "../Buttons/Button";
+
 import Skills from "../Forms/Skills";
 import Links from "../Forms/Links";
 import Education from "../Forms/Education";
@@ -23,21 +23,39 @@ function Home() {
 
     const [formData, setFormData] = useState({
 
-        name: "Your Name",
+        name: "",
         title: "",
         email: "",
         linkedin: "",
         github: "",
         mobile: "",
 
-        WorkExperience: "",
-        wtitle: "",
-        certificate: "",
-        startdate: "",
-        company: "",
-        location: "",
-        enddate: "",
-        description: "",
+        WorkExperience1: "",
+        wtitle1: "",
+        certificate1: "",
+        startdate1: "",
+        company1: "",
+        location1: "",
+        enddate1: "",
+        description1: "",
+
+        WorkExperience2: "",
+        wtitle2: "",
+        certificate2: "",
+        startdate2: "",
+        company2: "",
+        location2: "",
+        enddate2: "",
+        description2: "",
+
+        WorkExperience3: "",
+        wtitle3: "",
+        certificate3: "",
+        startdate3: "",
+        company3: "",
+        location3: "",
+        enddate3: "",
+        description3: "",
 
         skill1: "",
         skill2: "",
@@ -70,23 +88,63 @@ function Home() {
         link6name: "",
         link7name: "",
 
-        collage: "",
-        collage_location: "",
-        degree: "",
-        major: "",
-        percentage: "",
-        collage_start_date: "",
-        collage_end_date: "",
+        collage1: "",
+        collage_location1: "",
+        degree1: "",
+        major1: "",
+        percentage1: "",
+        collage_start_date1: "",
+        collage_end_date1: "",
 
-        project_name: "",
-        project_description: "",
-        project_tool: "",
-        project_link: "",
-        project_demo_link: "",
+        collage2: "",
+        collage_location2: "",
+        degree2: "",
+        major2: "",
+        percentage2: "",
+        collage_start_date2: "",
+        collage_end_date2: "",
 
-        achievement_name: "",
-        achievement_description: "",
-        achievement_certificate: "",
+        collage3: "",
+        collage_location3: "",
+        degree3: "",
+        major3: "",
+        percentage3: "",
+        collage_start_date3: "",
+        collage_end_date3: "",
+
+        project_name1: "",
+        project_description1: "",
+        project_tool1: "",
+        project_link1: "",
+        project_demo_link1: "",
+
+        project_name2: "",
+        project_description2: "",
+        project_tool2: "",
+        project_link2: "",
+        project_demo_link2: "",
+
+        project_name3: "",
+        project_description3: "",
+        project_tool3: "",
+        project_link3: "",
+        project_demo_link3: "",
+
+        achievement_name1: "",
+        achievement_description1: "",
+        achievement_certificate1: "",
+
+        achievement_name2: "",
+        achievement_description2: "",
+        achievement_certificate2: "",
+
+        achievement_name3: "",
+        achievement_description3: "",
+        achievement_certificate3: "",
+
+        achievement_name4: "",
+        achievement_description4: "",
+        achievement_certificate4: "",
 
         other_section_title: "",
         other_section_detail1: "",
@@ -103,13 +161,7 @@ function Home() {
     };
 
 
-    let handleprev=()=>{
-        
-
-    };
-    let handlenext=()=>{
-
-    };
+  
 
     return (
         <div className="home__container">
@@ -168,10 +220,10 @@ function Home() {
             </div>
 
             {/*  Bottom buttons container */}
-            <div className="format__button_bottom">
-                <button className="btn" onClick={handleprev}>&#8249; Prev</button>
-                <button className="btn" onClick={handlenext}>Next &#8250;</button>
-            </div>
+            {/* <div className="format__button_bottom">
+                <button className="btn" >&#8249; Prev</button>
+                <button className="btn" >Next &#8250;</button>
+            </div> */}
         </div>
     );
 }

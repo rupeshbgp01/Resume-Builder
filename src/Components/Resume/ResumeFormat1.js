@@ -1,16 +1,16 @@
 import React, { forwardRef } from 'react';
 
-import {AiOutlineMail} from 'react-icons/ai'
-import {BiPhoneCall} from 'react-icons/bi'
-import {AiOutlineLinkedin} from 'react-icons/ai'
-import {AiFillGithub} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BiPhoneCall } from 'react-icons/bi'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai'
 import './ResumeFormat1.css'
 
 
-const ResumeFormat1 =forwardRef( (props,ref) => {
+const ResumeFormat1 = forwardRef((props, ref) => {
 
     return (
-        
+
         <div className='format1__container' ref={ref} >
 
             <div className='intro__container'>
@@ -18,13 +18,13 @@ const ResumeFormat1 =forwardRef( (props,ref) => {
                 <h5>{props.data.title} </h5>
                 <div className='contact__container'>
                     <div className='basic__contact'>
-                        <p><BiPhoneCall/> <span>{props.data.mobile}</span></p>
-                        <p><AiOutlineMail/>  <span>{props.data.email}</span></p>
+                        <p><BiPhoneCall /> <span>{props.data.mobile}</span></p>
+                        <p><AiOutlineMail />  <span>{props.data.email}</span></p>
 
                     </div>
                     <div className='advance__contact'>
-                        <p><AiOutlineLinkedin/> <span>{props.data.linkedin}</span></p>
-                        <p><AiFillGithub/> <span>{props.data.github}</span></p>
+                        <p><AiOutlineLinkedin /> <span>{props.data.linkedin}</span></p>
+                        <p><AiFillGithub /> <span>{props.data.github}</span></p>
                     </div>
                 </div>
             </div>
@@ -65,29 +65,34 @@ const ResumeFormat1 =forwardRef( (props,ref) => {
                         <hr />
                         <div className='detail'>
                             <div className='edu__detail'>
-                                <p>{props.data.collage_start_date}&nbsp;-&nbsp;{props.data.collage_end_date}</p>
-                                <p>{props.data.degree} / {props.data.major}</p>
-                                <p>{props.data.collage} {props.data.collage_location}</p>
-                                <p><span>{props.data.percentage}</span></p>
+                                <p>{props.data.collage_start_date1}&nbsp;&nbsp;{props.data.collage_end_date1}</p>
+                                <p><span className='collage_name'>{props.data.degree1}</span>  {props.data.major1}</p>
+                                <p>{props.data.collage1} {props.data.collage_location1}</p>
+                                <p><span>{props.data.percentage1}</span></p>
                             </div>
-                            {/* <div className='edu__detail'>
-                                <p>2018-2020</p>
-                                <p>12th Math</p>
-                                <p>Divine Happy School</p>
-                                <p>Percentage : <span>93</span></p>
-                            </div>
+
                             <div className='edu__detail'>
-                                <p>2017-2018</p>
-                                <p>10th</p>
-                                <p>Divine Happy School</p>
-                                <p>Percentage : <span>93</span></p>
-                            </div> */}
+                                <p>{props.data.collage_start_date2}{props.data.collage_end_date2}</p>
+                                <p><span className='collage_name'>{props.data.degree2}</span>  {props.data.major2}</p>
+                                <p>{props.data.collage2} {props.data.collage_location2}</p>
+                                <p><span>{props.data.percentage2}</span></p>
+                            </div>
+
+                            <div className='edu__detail'>
+                                <p>{props.data.collage_start_date3}{props.data.collage_end_date3}</p>
+                                <p><span className='collage_name'>{props.data.degree3} </span> {props.data.major3}</p>
+                                <p>{props.data.collage3} {props.data.collage_location3}</p>
+                                <p><span>{props.data.percentage3}</span></p>
+                            </div>
+
+
+
                         </div>
                     </div>
                     <div className='other_section'>
-                    <h3>{props.data.other_section_title}</h3> 
-                    <p>{props.data.other_section_detail1}</p>
-                    <p>{props.data.other_section_detail2}</p>
+                        <h3>{props.data.other_section_title}</h3>
+                        <p>{props.data.other_section_detail1}</p>
+                        <p>{props.data.other_section_detail2}</p>
                     </div>
                 </div>
 
@@ -96,48 +101,61 @@ const ResumeFormat1 =forwardRef( (props,ref) => {
                     <div className='experience__list'>
                         <h3>Experience</h3>
                         <hr />
-                        <div className='experiance__info'>
-                            <p>{props.data.enddate}&nbsp; -&nbsp; {props.data.startdate} <span>&nbsp;{props.data.company}</span></p>
-                            <p className='position__info'>{props.data.wtitle}</p>
-                            <p>{props.data.description}</p>
-                            <p>{props.data.certificate}</p>
-                        </div>
 
-                        {/* <div className='experiance__info'>
-                            <p>Dec 2023-Present <span>Infosis</span></p>
-                            <p className='position__info'>Software Developer</p>
-                            <p>Working under the Research team of Infosis Working under the Research team of Infosis Working under the Research team of Infosis</p>
+                        <div className='experiance__info'>
+                            <p>{props.data.enddate1} {props.data.startdate1} <span>{props.data.company1}</span></p>
+                            <p className='position__info'>{props.data.wtitle1}</p>
+                            <p>{props.data.description1}</p>
+                            <p>{props.data.certificate1}</p>
                         </div>
 
                         <div className='experiance__info'>
-                            <p>Dec 2023-Present <span>Infosis</span></p>
-                            <p className='position__info'>Software Developer</p>
-                            <p>Working under the Research team of Infosis Working under the Research team of Infosis</p>
-                        </div> */}
+                            <p>{props.data.enddate2} {props.data.startdate2} <span>{props.data.company2}</span></p>
+                            <p className='position__info'>{props.data.wtitle2}</p>
+                            <p>{props.data.description2}</p>
+                            <p>{props.data.certificate2}</p>
+                        </div>
+
+                        <div className='experiance__info'>
+                            <p>{props.data.enddate3} {props.data.startdate3} <span>{props.data.company3}</span></p>
+                            <p className='position__info'>{props.data.wtitle3}</p>
+                            <p>{props.data.description3}</p>
+                            <p>{props.data.certificate3}</p>
+                        </div>
+
+
                     </div>
 
                     <div className='Projects__container'>
                         <h3>Projects</h3>
                         <hr />
                         <div className='project__info'>
-                            <span className='project__title'>{props.data.project_name}</span>
-                            <p className='application__used'>{props.data.project_description}</p>
-                            <p><span>Tools Used : </span>{props.data.project_tool}</p>
-                            <p><a href={props.data.project_link}>GitHub Repository</a> </p>
-                            <p><a href={props.data.project_demo_link}>Project Demo</a></p>
-                        </div>
-
-                        {/* <div className='project__info'>
-                            <p>Dec 2023-Present <span className='project__title'>Resume Builder</span></p>
-                            <p className='application__used'>Software Developer</p>
-                            <p>Working under the Research team of Infosis Working under the Research team of Infosis Working under the Research team of Infosis</p>
+                            
+                            <span className='project__title'>{props.data.project_name1}</span>
+                            <p className='application__used'>{props.data.project_description1}</p>
+                            <p><span></span>{props.data.project_tool1}</p>
+                            <p><a href={props.data.project_link1}>{props.data.project_link1}</a> </p>
+                            <p><a href={props.data.project_demo_link1}>{props.data.project_demo_link1}</a></p>
                         </div>
 
                         <div className='project__info'>
-                            <p>Dec 2023-Present <span className='project__title'>Whether App</span></p>
-                            <p className='application__used'>Software Developer</p>
-                            <p>Working under the Research team of Infosis Working under the Research team of Infosis</p>
-                        </div> */}
+                            <span className='project__title'>{props.data.project_name2}</span>
+                            <p className='application__used'>{props.data.project_description2}</p>
+                            <p><span> </span>{props.data.project_tool2}</p>
+                            <p><a href={props.data.project_link2}>{props.data.project_link2}</a> </p>
+                            <p><a href={props.data.project_demo_link2}>{props.data.project_demo_link2}</a></p>
+                        </div>
+
+                        <div className='project__info'>
+                            <span className='project__title'>{props.data.project_name3}</span>
+                            <p className='application__used'>{props.data.project_description3}</p>
+                            <p><span></span>{props.data.project_tool3}</p>
+                            <p><a href={props.data.project_link3}>{props.data.project_link3}</a> </p>
+                            <p><a href={props.data.project_demo_link3}>{props.data.project_demo_link3}</a></p>
+                        </div>
+                        
+
+                        
                     </div>
 
 
@@ -146,39 +164,51 @@ const ResumeFormat1 =forwardRef( (props,ref) => {
                         <hr />
                         <div className='achievement__list'>
                             <div className='achiv__info'>
-                                <h4> {props.data.achievement_name} </h4>
-                                <h4><a href='www.linkedin.com'>{props.data.achievement_certificate} </a></h4>
+                                <h4> {props.data.achievement_name1} </h4>
+                                <h4><a href='www.linkedin.com'>{props.data.achievement_certificate1} </a></h4>
                             </div>
                             <div className='achiv__detail'>
-                                {props.data.achievement_description}
+                                {props.data.achievement_description1}
                             </div>
                         </div>
 
-                        {/* <div className='achievement__list'>
+                        <div className='achievement__list'>
                             <div className='achiv__info'>
-                                <h4>CodeForce Rating</h4>
-                                <h4><a href='www.linkedin.com'>Link to CodeChef Profile</a></h4>
+                                <h4> {props.data.achievement_name2} </h4>
+                                <h4><a href='www.linkedin.com'>{props.data.achievement_certificate2} </a></h4>
                             </div>
                             <div className='achiv__detail'>
-                                Rayrtdskjhlkah ahk ljajlkda  uhd ljsda  hi l jdaljdkh a
+                                {props.data.achievement_description2}
                             </div>
-                        </div> */}
+                        </div>
 
-                        {/* <div className='achievement__list'>
+                        <div className='achievement__list'>
                             <div className='achiv__info'>
-                                <h4>GeekforGeek Rating</h4>
-                                <h4><a href='www.linkedin.com'>Link to CodeChef Profile</a></h4>
+                                <h4> {props.data.achievement_name3} </h4>
+                                <h4><a href='www.linkedin.com'>{props.data.achievement_certificate3} </a></h4>
                             </div>
                             <div className='achiv__detail'>
-                                Rayrtdskjhlkah ahk ljajlkda  uhd ljsda  hi l jdaljdkh a
+                                {props.data.achievement_description3}
                             </div>
-                        </div> */}
+                        </div>
+
+                        <div className='achievement__list'>
+                            <div className='achiv__info'>
+                                <h4> {props.data.achievement_name4} </h4>
+                                <h4><a href='www.linkedin.com'>{props.data.achievement_certificate4} </a></h4>
+                            </div>
+                            <div className='achiv__detail'>
+                                {props.data.achievement_description4}
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>
 
         </div>
-        
+
     );
 });
 
