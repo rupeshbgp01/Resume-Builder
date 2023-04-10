@@ -1,4 +1,4 @@
-.format2__container{
+/* .format2__container{
     width: 100%;
     margin: auto;
     padding: 20px;
@@ -43,5 +43,64 @@ h1,h2,h3,h3{
 ::-webkit-scrollbar {
     display: none;
     
-}
+} */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+.format2container{
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: white;
+  font-family:'Barlow';
+}
+.namef2{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Barlow';
+}
+.nametitlef2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Barlow';
+}
+.contactf2{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Barlow';
+  opacity: 0.9;
+}
+.detailsf2{
+  font-family: 'Barlow';
+  display: flex;
+  padding: 20px;
+  gap: 10rem;
+  
+  align-items: center;
+}
+.headingf2{
+  font-size: 25px;
+  opacity: 0.75;
+  font-weight: 600;
+}
+.lf2{
+  font-weight: bold;
+}
+.leftf2{
+  font-size: 2px;
+}
+.titlef2{
+  font-size: 20px;
+  font-weight: 900;
+}
+.dataf2{
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 1;
+}
+.datef2{
+  font-size: 15px;
+}

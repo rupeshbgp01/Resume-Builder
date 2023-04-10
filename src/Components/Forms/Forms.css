@@ -133,5 +133,14 @@ legend {
     .wrapper{
         width: 100%;
     }
+    .basic__top>span{
+        font-size: 1rem;
+        line-height: 1rem;
+        
+    }
+    .basic__container{
+        padding: 0.2rem;
+    }
+    
     
 }

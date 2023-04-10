@@ -1,7 +1,7 @@
 {
   "name": "ssdc",
   "version": "0.1.0",
-  "homepage": "https://Rupeshbgp01.github.io/Resume-Builder",
+  "homepage": "https://rupeshbgp01.github.io/Resume-Builder",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
